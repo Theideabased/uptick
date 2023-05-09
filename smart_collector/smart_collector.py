@@ -8,7 +8,8 @@ from pathlib import Path
 car_insurance_csv = Path(__file__).parents[1] /'smart_collector/car_insurance.csv'
 data = pd.read_csv(car_insurance_csv)
 # Load the model
-my_pipeline = joblib.load(open("insurance_june_2023.pkl","rb")) 
+model = Path(__file__).parents[1] /'smart_collector/insurance_june_2023.pkl'
+my_pipeline = joblib.load(open(model,"rb")) 
 # Define the app
 def app():
     st.title('Smart collector')
