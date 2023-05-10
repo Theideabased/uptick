@@ -24,7 +24,7 @@ def main():
                 
                 if input_3:
                     formula = "5.2391 + (0.1773 * X2^1) + (-0.0002 * X3^1)"
-                    st.write(f"Model is {formula}")
+                    st.write(f"The relationship is {formula}")
                     last_input = st.text_input ("You")
                     if last_input:
                         st.write("This is a polynomial model")
