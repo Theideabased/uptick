@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 def main():
-    st.title("Odaibo Underwriting App")
+    st.title("Odaibo Underwriting chatbot")
     st.write("Building efficiency and accuracy in Underwriting") 
     name = st.text_input("Enter your name:")
     
